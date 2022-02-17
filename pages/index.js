@@ -2,13 +2,11 @@ import Link from "next/link";
 
 function HomePage() {
   return (
-    <div className="bg-teal-500 text-slate-100 p-10 transition-colors">
-      Go to{" "}
-      <Link href="/about">
-        <span className="cursor-pointer">About</span>
-      </Link>{" "}
-      Page
-    </div>
+    <Link href="/about">
+      <button class="py-2 px-3 bg-blue-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-blue-500/50 focus:outline-none">
+        About
+      </button>
+    </Link>
   );
 }
 
