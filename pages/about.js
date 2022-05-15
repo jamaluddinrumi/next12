@@ -1,11 +1,12 @@
 import Link from "next/link";
+import Button from "../components/Button";
 
 function AboutPage() {
   return (
     <Link href="/">
-      <button class="py-2 px-3 bg-indigo-500 text-white text-sm font-semibold rounded-md shadow-lg shadow-indigo-500/50 focus:outline-none">
-        Home Page
-      </button>
+      <a>
+        <Button text="Go to Home page" />
+      </a>
     </Link>
   );
 }
